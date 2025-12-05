@@ -1,0 +1,59 @@
+*  Circuit: newtag
+*  total number of lines in the netlist ..............    26
+*  simplistically reduced equivalent fault set size =     40
+*        lines from primary input  gates .......     8
+*        lines from primary output gates .......     1
+*        lines from interior gate outputs ......     17
+*        lines from **     4 ** fanout stems ...     10
+*
+*        avg_fanin  =  2.00,     max_fanin  =  2
+*        avg_fanout =  1.85,     max_fanout =  3
+*
+*
+*
+*
+*
+    1     1gat inpt    1   1      >sa1
+    2     2gat inpt    1   1      >sa1
+    3     3gat inpt    1   1      >sa1
+    4     4gat inpt    1   1      >sa1
+    5     5gat inpt    1   1      >sa1
+    6     6gat inpt    1   1      >sa1
+    7     7gat inpt    1   1      >sa1
+    8     8gat inpt    1   1      >sa1
+    9     9gat inv     1   1      >sa1
+     2
+   10    10gat inv     1   3 >sa0 >sa1
+     5
+   11    11gat inv     1   3 >sa0 >sa1
+     6
+   12    12gat inv     1   2 >sa0 >sa1
+     7
+   13    13gat inv     1   2 >sa0 >sa1
+     8
+   14    14gat and     2   1      >sa1
+    10    11
+   15    15gat and     2   1      >sa1
+    10    12
+   16    16gat and     2   1      >sa1
+    11    12
+   17    17gat and     2   1      >sa1
+    10    13
+   18    18gat and     2   1      >sa1
+    11    13
+   19    19gat or      2   1      >sa1
+    14    15
+   20    20gat or      2   1      >sa1
+    19    16
+   21    21gat or      2   1      >sa1
+    20    17
+   22    22gat or      2   1      >sa1
+    21    18
+   23    23gat and     2   1      >sa1
+     4    22
+   24    24gat or      2   1      >sa1
+     1     9
+   25    25gat or      2   1      >sa1
+    24     3
+   26    26gat or      2   0 >sa0 >sa1
+    25    23
